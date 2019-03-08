@@ -1,0 +1,19 @@
+server:
+  port: 8081
+
+dubbo:
+  application:
+    # dubbo 应用名
+    name: spring-boot-consumer-service
+  #协议,服务提供者,有协议
+  protocol:
+    name: dubbo
+    port: 20880
+  #注册中心地址
+  registry:
+    address: zookeeper://172.31.227.84:2181
+  monitor:
+    # 通过注册中心连接监控中心
+    protocol: registry
+
+

@@ -1,0 +1,15 @@
+
+dubbo:
+  application:
+    name: spring-boot-provide-service
+  protocol:
+    port: 20080
+  scan: open.billy.demo.impl
+  #注册中心地址
+  registry:
+    protocol: zookeeper
+    address: 172.31.227.84:2181
+  monitor:
+    # 通过注册中心连接监控中心
+    protocol: registry
+
